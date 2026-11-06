@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -O2 -Iinclude
+CFLAGS = -Wall -Wextra -Werror -O2 -Iinclude -std=c11
 TARGET = scout-fm
 SRC = src/main.c src/explorer.c
 LIBS = -lncursesw
