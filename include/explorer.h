@@ -31,17 +31,15 @@ typedef enum {
 
 void explorer_initialize(ExplorerState *state);
 void explorer_refresh(ExplorerState *state);
-
 void explorer_toggle_expand(ExplorerState *state);
 void explorer_enter(ExplorerState *state);
 void explorer_go_up(ExplorerState *state);
 void explorer_move(ExplorerState *state, int direction);
 void explorer_toggle_mark(ExplorerState *state);
-void explorer_open_file(ExplorerState *state);
-
+void explorer_change_directory(ExplorerState *state, const char *target_path);
+int explorer_is_text_file(const char *path);
 void explorer_create_file(ExplorerState *state, const char *name);
 void explorer_create_dir(ExplorerState *state, const char *name);
-
 int explorer_has_marks(ExplorerState *state);
 int explorer_is_dir_not_empty(const char *path);
 DeleteResult explorer_delete(ExplorerState *state, int force);

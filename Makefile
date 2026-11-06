@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -O2 -Iinclude -std=c11
-TARGET = scout-fm
+TARGET = scout
 SRC = src/main.c src/explorer.c
 LIBS = -lncursesw
 
@@ -10,6 +10,6 @@ $(TARGET): $(SRC)
 	$(CC) $(CFLAGS) -o $(TARGET) $(SRC) $(LIBS)
 
 clean:
-	rm -f $(TARGET)
+	rm -f $(TARGET) scout-fm
 
 .PHONY: all clean

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Scout File Manager
+Comment=TeufortBSD File Manager
+Exec=scout
+Icon=system-file-manager
+Terminal=true
+Type=Application
+Categories=System;FileManager;
+Keywords=file;manager;explorer;scout;
